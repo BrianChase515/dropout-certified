@@ -1,0 +1,8 @@
+{
+  "name": "dropout-certified",
+  "description": "Dropout Certified, a free skills credential by Brian Chase.",
+  "owner": { "name": "Brian Chase", "url": "https://github.com/BrianChase515" },
+  "plugins": [
+    { "name": "dropout-certified", "source": "./", "description": "A free study coach for AI Essentials and Data Analysis with SQL." }
+  ]
+}

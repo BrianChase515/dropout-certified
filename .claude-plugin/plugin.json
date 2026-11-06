@@ -1,0 +1,11 @@
+{
+  "name": "dropout-certified",
+  "displayName": "Dropout Certified",
+  "version": "1.0.0",
+  "description": "A free study coach for Dropout Certified: learn AI Essentials and Data Analysis with SQL to a mastery standard, with practice exams.",
+  "author": { "name": "Brian Chase", "url": "https://github.com/BrianChase515" },
+  "homepage": "https://github.com/BrianChase515/dropout-certified",
+  "repository": "https://github.com/BrianChase515/dropout-certified",
+  "license": "MIT",
+  "keywords": ["learning", "education", "ai-literacy", "sql", "data-analysis", "certification", "study"]
+}
