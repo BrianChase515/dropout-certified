@@ -87,11 +87,11 @@
     },
     {
      "id": "b",
-     "text": "An up-to-date answer, because public law changes are added to models automatically"
+     "text": "An up-to-date answer, if the law was widely reported in the news"
     },
     {
      "id": "c",
-     "text": "A clear \"I don't know,\" because models always flag events after their cutoff"
+     "text": "A note about its cutoff date, followed by an answer that reflects the new law"
     },
     {
      "id": "d",
@@ -103,8 +103,8 @@
    ],
    "why_not": {
     "a": "Most assistants discuss laws; the risk is staleness.",
-    "b": "Models don't update on their own after training.",
-    "c": "Models often answer from older knowledge without flagging it."
+    "b": "Without search, news after the cutoff isn't available.",
+    "c": "It can't know a change it never saw."
    }
   },
   {
@@ -153,7 +153,7 @@
    "options": [
     {
      "id": "a",
-     "text": "The first answer is the real one; later runs add noise on purpose"
+     "text": "Run it a third time and keep whichever summary matches one of the others"
     },
     {
      "id": "b",
@@ -165,16 +165,16 @@
     },
     {
      "id": "d",
-     "text": "The tool is broken, because a working model gives identical answers every time"
+     "text": "The prompt is too vague; a precise enough prompt would give identical answers"
     }
    ],
    "answer": [
     "b"
    ],
    "why_not": {
-    "a": "Neither run is privileged.",
+    "a": "Agreement between runs isn't the same as being correct.",
     "c": "The model doesn't retrain between your messages.",
-    "d": "Variation between runs is normal behavior."
+    "d": "Clearer prompts reduce variation but don't remove sampling."
    }
   },
   {
@@ -270,7 +270,7 @@
     },
     {
      "id": "d",
-     "text": "No AI at all, since any AI involvement makes strategy less original"
+     "text": "Augmentation: have AI draft the full memo, then edit the wording yourself"
     }
    ],
    "answer": [
@@ -279,7 +279,7 @@
    "why_not": {
     "b": "Publishing isn't the bottleneck; the reasoning is.",
     "c": "Handing off entirely skips the thinking the memo depends on.",
-    "d": "AI can help with drafts and counterarguments when you stay in charge."
+    "d": "Editing wording isn't the same as doing the thinking."
    }
   },
   {
@@ -686,7 +686,7 @@
     },
     {
      "id": "c",
-     "text": "Nothing, since a summary can only condense numbers that are in the source"
+     "text": "Check that the number looks plausible for a company of this size"
     },
     {
      "id": "d",
@@ -698,7 +698,7 @@
    ],
    "why_not": {
     "b": "Rounding doesn't fix a wrong number.",
-    "c": "Summaries can misstate numbers or periods.",
+    "c": "Plausible numbers can still be wrong.",
     "d": "The same tool re-asserting isn't independent verification."
    }
   },
@@ -748,7 +748,7 @@
    "options": [
     {
      "id": "a",
-     "text": "It shows AI can't do this, so you should write these yourself"
+     "text": "It's close enough; just add the owners yourself before sending"
     },
     {
      "id": "b",
@@ -767,7 +767,7 @@
     "c"
    ],
    "why_not": {
-    "a": "It's fixable with a precise follow-up.",
+    "a": "The length requirement is still missed.",
     "b": "You set the limit for a reason.",
     "d": "Two stated requirements were missed."
    }
@@ -787,11 +787,11 @@
     },
     {
      "id": "b",
-     "text": "It's about productivity, which can't be measured in any meaningful way"
+     "text": "It doesn't say how many employees answered the survey"
     },
     {
      "id": "c",
-     "text": "It relies on a survey, which can never support any workplace finding"
+     "text": "It relies on self-reported survey data rather than output measures"
     },
     {
      "id": "d",
@@ -803,8 +803,8 @@
    ],
    "why_not": {
     "a": "Length isn't the issue.",
-    "b": "Productivity can be measured, imperfectly.",
-    "c": "Surveys can be useful when interpreted carefully."
+    "b": "Worth asking, but the bigger flaw is claiming a cause.",
+    "c": "A real limit, but secondary to the unsupported causal claim."
    }
   },
   {
@@ -826,7 +826,7 @@
     },
     {
      "id": "c",
-     "text": "AI can't generate customer profiles, so drop the request"
+     "text": "The prompt was too short; ask for more profiles to get variety"
     },
     {
      "id": "d",
@@ -838,7 +838,7 @@
    ],
    "why_not": {
     "b": "It's a skew from defaults, not intent.",
-    "c": "It can, with the right context.",
+    "c": "More profiles from the same defaults repeat the skew.",
     "d": "It's an assumption, not data about your customers."
    }
   },
@@ -931,7 +931,7 @@
     },
     {
      "id": "c",
-     "text": "Harmless, since AI assistants can't send or forward email at all"
+     "text": "Harmless if you only asked for a summary, since nothing was sent"
     },
     {
      "id": "d",
@@ -944,7 +944,7 @@
    "why_not": {
     "a": "Anyone can write \"Assistant:\"; authority to instruct comes from you.",
     "b": "Lookalike addresses are common in these attacks.",
-    "c": "Assistants connected to email often can."
+    "c": "Injected text can still skew the summary or later actions."
    }
   },
   {
@@ -1028,11 +1028,11 @@
    "options": [
     {
      "id": "a",
-     "text": "Nothing, since the Act's duties apply only to companies building models"
+     "text": "Literacy training, but only for staff who build or buy AI systems"
     },
     {
      "id": "b",
-     "text": "Proof that every AI user has passed an official government AI exam"
+     "text": "Registering each AI tool the organization uses with a national regulator"
     },
     {
      "id": "c",
@@ -1047,8 +1047,8 @@
     "c"
    ],
    "why_not": {
-    "a": "Article 4 covers deployers, meaning organizations using AI, too.",
-    "b": "No mandatory exam or certificate is required.",
+    "a": "Article 4 covers staff who use AI too.",
+    "b": "Article 4 is about staff literacy, not registration.",
     "d": "Article 4 requires literacy, not a ban."
    }
   },
@@ -1168,7 +1168,7 @@
    "options": [
     {
      "id": "a",
-     "text": "None, since an agent with clear written rules always follows them exactly"
+     "text": "Detailed written rules telling the agent exactly when a ticket counts as resolved"
     },
     {
      "id": "b",
@@ -1180,16 +1180,16 @@
     },
     {
      "id": "d",
-     "text": "Full admin access, so it never gets stuck partway through a task"
+     "text": "A notification to the support lead each time it closes a ticket"
     }
    ],
    "answer": [
     "c"
    ],
    "why_not": {
-    "a": "Agents make mistakes, and their actions have real effects.",
+    "a": "Helpful, but rules alone don't catch its mistakes.",
     "b": "Tone isn't the main risk when an agent takes actions.",
-    "d": "Broad permissions widen the damage from any error."
+    "d": "Notifications nobody reviews aren't a safeguard."
    }
   },
   {
